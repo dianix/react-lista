@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 //import Header from "./componentes/Header.jsx";
 import Lista from "./componentes/Lista.jsx";
-import {Row,Col,Button,Icon,Navbar,NavItem} from 'react-materialize';
+import {Row,Col,Button,Icon,Navbar,NavItem,CardPanel} from 'react-materialize';
 
 class App extends Component {   
     constructor(){
@@ -26,9 +26,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar brand='logo' right>
-                	<NavItem href='get-started.html'>Getting started</NavItem>
-                	<NavItem href='components.html'>Components</NavItem>
+                <Navbar brand='antilogo' left fixed>
+                	<NavItem href='get-started.html'>nosotros<Icon right>people</Icon></NavItem>
+                	<NavItem href='components.html'>contacto<Icon right>person_pin</Icon></NavItem>
                 </Navbar>
                
                     <Row>                        
@@ -37,10 +37,13 @@ class App extends Component {
                             <Button onClick={this.agregarItem} waves='light'>agregar <Icon right>send</Icon> </Button>
                         </Col>
                     </Row>
-                
-                <div className="contenedorListas">
+                <Row>                        
+                    <Col s={12} m={6} offset="m3">
+                <CardPanel className="left-align">
                     <Lista tituloLista="Frutas" itemsLista={this.state.arregloItems} />
-                </div> 
+                </CardPanel>
+                    </Col>
+                </Row>                        
             
                 <div className="App-footer">
                     <img src={logo} className="App-logo" alt="logo" />

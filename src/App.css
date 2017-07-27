@@ -3,27 +3,6 @@ nav {
     text-transform: uppercase;
 }
 
-.contenedorListas {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: center;
-}
-
-.contenedorListas div {
-    background-color: #a8a8a8;
-    border-radius: 3px;
-    padding: 2rem 5rem;
-    height: 15rem;
-    margin: 2rem 0;
-}
-
-.contenedorListas div ul {
-	list-style: none;
-    color: #363636;
-}
-
-
 .App {
   text-align: center;
 }
