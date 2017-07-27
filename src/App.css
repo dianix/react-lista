@@ -1,0 +1,50 @@
+nav {
+    background-color: #3caccb;
+    text-transform: uppercase;
+}
+
+.contenedorListas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.contenedorListas div {
+    background-color: #a8a8a8;
+    border-radius: 3px;
+    padding: 2rem 5rem;
+    height: 15rem;
+    margin: 2rem 0;
+}
+
+.contenedorListas div ul {
+	list-style: none;
+    color: #363636;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-footer {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
